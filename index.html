@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YuLiang & YuChieh | 婚禮邀請函</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Elegant Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -106,28 +103,24 @@
 </head>
 <body class="antialiased selection:bg-[#E0C8C0] selection:text-white">
 
-    <!-- Navigation Bar -->
     <nav class="fixed top-0 left-0 w-full z-50 glassmorphism transition-all duration-300">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="font-english text-xl md:text-2xl font-light tracking-[0.2em] text-[#3D3B37] transition-all duration-300 hover:text-[#A2B4C0]">
-                Huang <span class="text-sm md:text-base text-[#E0C8C0] mx-1">&</span> Hsu
+                Huang <span class="text-xs text-[#E0C8C0]">&</span> Hsu
             </a>
             
-            <!-- Desktop Nav Links -->
-            <div class="hidden md:flex space-x-12 items-center justify-end flex-1">
+            <div class="hidden md:flex flex-1 justify-end space-x-12 items-center">
                 <a href="#about" class="font-chinese text-sm tracking-widest text-[#5C5A56] hover:text-[#A2B4C0] transition-colors duration-300">關於我們</a>
                 <a href="#details" class="font-chinese text-sm tracking-widest text-[#5C5A56] hover:text-[#A2B4C0] transition-colors duration-300">婚禮詳情</a>
                 <a href="#rsvp" class="font-chinese text-sm tracking-widest text-[#5C5A56] hover:text-[#A2B4C0] transition-colors duration-300">出席回函</a>
             </div>
 
-            <!-- Mobile Menu Button -->
-            <div class="md:hidden flex items-center justify-end flex-1">
+            <div class="flex items-center md:hidden">
                 <button id="mobile-menu-btn" class="text-[#3D3B37] focus:outline-none" aria-label="Toggle Menu">
                     <i class="fa-solid fa-bars-staggered text-lg"></i>
                 </button>
             </div>
         </div>
-        <!-- Mobile Dropdown Menu -->
         <div id="mobile-menu" class="hidden md:hidden border-t border-[#E0C8C0]/30 bg-[#FAF9F6]/95 backdrop-blur-md">
             <div class="px-6 py-4 flex flex-col space-y-4">
                 <a href="#about" class="mobile-link font-chinese text-sm tracking-widest text-[#5C5A56] py-1">關於我們</a>
@@ -137,16 +130,12 @@
         </div>
     </nav>
 
-    <!-- Hero / Cover Section -->
     <header class="relative w-full h-[100svh] overflow-hidden flex flex-col items-center justify-start pt-[12vh] md:justify-center md:pt-0">
-        <!-- Background Image Cover -->
         <div class="absolute inset-0 z-0">
-            <img src="https://i.postimg.cc/tg3gJSWr/DSC0505-450.jpg" alt="Wedding Cover" class="w-full h-full object-cover object-[center_30%] md:object-center scale-105 filter brightness-[0.88] transition-transform duration-10000" id="hero-img">
-            <!-- Warm elegant gradient overlay -->
+            <img src="https://i.postimg.cc/vZHCrW49/DSC0505-263-jing-xiu.jpg" alt="Wedding Cover" class="w-full h-full object-cover object-[center_30%] md:object-center scale-105 filter brightness-[0.88] transition-transform duration-10000" id="hero-img">
             <div class="absolute inset-0 bg-gradient-to-b from-stone-900/40 via-transparent to-stone-900/30"></div>
         </div>
 
-        <!-- Hero Content Overlay -->
         <div class="relative z-10 text-center text-white px-4 animate-fade-in max-w-4xl mx-auto flex flex-col items-center">
             <p class="font-english text-xs md:text-base tracking-[0.4em] text-[#E0C8C0] uppercase mb-2 md:mb-4 drop-shadow-md">The Wedding of</p>
             
@@ -158,7 +147,6 @@
                 黃于倞 <span class="text-xs text-[#E0C8C0] mx-1">與</span> 徐宇潔
             </p>
 
-            <!-- Decorative Fine Border Line -->
             <div class="w-16 md:w-24 h-[1px] bg-white/40 my-2 md:my-3"></div>
 
             <p class="font-chinese text-[13px] md:text-xl font-light tracking-[0.3em] text-[#FAF9F6] drop-shadow mt-1 md:mt-2 leading-relaxed max-w-lg">
@@ -171,7 +159,6 @@
                 2026 . 11 . 14
             </div>
 
-            <!-- Animated Down Arrow (改為跟隨排版，鎖定在日期下方，永不重疊) -->
             <div class="animate-float mt-6 md:mt-12">
                 <a href="#about" class="text-white/80 hover:text-white transition-colors duration-300">
                     <i class="fa-solid fa-chevron-down text-xl md:text-2xl"></i>
@@ -180,12 +167,10 @@
         </div>
     </header>
 
-    <!-- Elegant Unified Countdown Section (Merged Single Card design with elegant dividers) -->
     <section class="py-12 px-6 relative -mt-16 z-20">
         <div class="max-w-2xl mx-auto">
             <div class="shimmer-card rounded-3xl p-6 md:p-8 flex items-center justify-between text-center">
                 
-                <!-- Days Element -->
                 <div class="flex-1">
                     <div class="text-3xl md:text-5xl lg:text-6xl font-light font-english text-[#6B7E8C]" id="days">00</div>
                     <div class="mt-2">
@@ -194,10 +179,8 @@
                     </div>
                 </div>
 
-                <!-- Separator -->
                 <div class="h-16 border-r border-[#E0C8C0]/40 mx-2 md:mx-4"></div>
 
-                <!-- Hours Element -->
                 <div class="flex-1">
                     <div class="text-3xl md:text-5xl lg:text-6xl font-light font-english text-[#6B7E8C]" id="hours">00</div>
                     <div class="mt-2">
@@ -206,10 +189,8 @@
                     </div>
                 </div>
 
-                <!-- Separator -->
                 <div class="h-16 border-r border-[#E0C8C0]/40 mx-2 md:mx-4"></div>
 
-                <!-- Minutes Element -->
                 <div class="flex-1">
                     <div class="text-3xl md:text-5xl lg:text-6xl font-light font-english text-[#6B7E8C]" id="minutes">00</div>
                     <div class="mt-2">
@@ -218,10 +199,8 @@
                     </div>
                 </div>
 
-                <!-- Separator -->
                 <div class="h-16 border-r border-[#E0C8C0]/40 mx-2 md:mx-4"></div>
 
-                <!-- Seconds Element -->
                 <div class="flex-1">
                     <div class="text-3xl md:text-5xl lg:text-6xl font-light font-english text-[#E0C8C0]" id="seconds">00</div>
                     <div class="mt-2">
@@ -234,7 +213,6 @@
         </div>
     </section>
 
-    <!-- About Us Section -->
     <section id="about" class="py-20 px-6 max-w-4xl mx-auto text-center scroll-mt-20">
         <div class="mb-12">
             <span class="font-english text-xs md:text-sm tracking-[0.3em] text-[#A2B4C0] uppercase block mb-2">Our Story</span>
@@ -243,7 +221,6 @@
         </div>
 
         <div class="shimmer-card rounded-3xl p-8 md:p-12 mb-12 relative overflow-hidden">
-            <!-- Elegant background decoration -->
             <div class="absolute -right-12 -top-12 opacity-[0.05] text-[#A2B4C0]">
                 <i class="fa-solid fa-seedling text-9xl"></i>
             </div>
@@ -281,7 +258,6 @@
         </div>
     </section>
 
-    <!-- Wedding Details Section -->
     <section id="details" class="py-20 px-6 bg-[#FAF9F6] border-t border-b border-[#E0C8C0]/20 scroll-mt-20">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
@@ -290,11 +266,9 @@
                 <div class="w-12 h-[1px] bg-[#E0C8C0] mx-auto mt-4"></div>
             </div>
 
-            <!-- Vertical V-Card Design -->
             <div class="shimmer-card rounded-3xl overflow-hidden max-w-xl mx-auto flex flex-col">
                 <div class="p-8 md:p-10 text-center space-y-8 flex-1">
                     
-                    <!-- Date and Time Card Block -->
                     <div class="space-y-3">
                         <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#FAF9F6] border border-[#E0C8C0]/40 text-[#A2B4C0] mb-2">
                             <i class="fa-regular fa-calendar-days text-base"></i>
@@ -310,7 +284,6 @@
 
                     <div class="w-16 h-[1px] bg-[#E0C8C0]/40 mx-auto"></div>
 
-                    <!-- Location Card Block -->
                     <div class="space-y-3">
                         <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#FAF9F6] border border-[#E0C8C0]/40 text-[#A2B4C0] mb-2">
                             <i class="fa-solid fa-map-location-dot text-base"></i>
@@ -323,7 +296,6 @@
                             <span class="no-wrap">臺北市南港區經貿一路168號3樓</span>
                         </p>
                         
-                        <!-- Google Maps Navigation Button -->
                         <div class="pt-4">
                             <a href="https://maps.google.com/?q=台北漢來大飯店" target="_blank" class="inline-flex items-center space-x-2 text-xs font-chinese tracking-widest text-[#5C5A56] hover:text-[#A2B4C0] bg-[#FAF9F6] hover:bg-white border border-[#E0C8C0]/60 hover:border-[#A2B4C0] px-5 py-2.5 rounded-full transition-all duration-300">
                                 <i class="fa-solid fa-location-arrow text-[10px]"></i>
@@ -335,7 +307,6 @@
                 </div>
             </div>
 
-            <!-- Transportation Accordion Section (Only Subway & Driving) -->
             <div class="max-w-xl mx-auto mt-8">
                 <div class="text-center mb-4">
                     <p class="text-xs font-chinese tracking-widest text-[#8C8480] font-light">點選下方查看交通方式</p>
@@ -343,7 +314,6 @@
                 
                 <div class="space-y-3">
                     
-                    <!-- Accordion 1: MRT -->
                     <div class="border border-[#E0C8C0]/40 rounded-2xl bg-white overflow-hidden shadow-sm">
                         <button class="accordion-header w-full px-6 py-4 flex justify-between items-center text-left focus:outline-none transition-colors duration-300 hover:bg-[#FAF9F6]">
                             <span class="font-chinese text-sm tracking-widest text-[#5C5A56] font-medium flex items-center">
@@ -363,7 +333,6 @@
                         </div>
                     </div>
 
-                    <!-- Accordion 2: Car -->
                     <div class="border border-[#E0C8C0]/40 rounded-2xl bg-white overflow-hidden shadow-sm">
                         <button class="accordion-header w-full px-6 py-4 flex justify-between items-center text-left focus:outline-none transition-colors duration-300 hover:bg-[#FAF9F6]">
                             <span class="font-chinese text-sm tracking-widest text-[#5C5A56] font-medium flex items-center">
@@ -389,12 +358,12 @@
         </div>
     </section>
 
-    <!-- New Photo Section before RSVP (Full Width) -->
-    <section class="py-12 w-full">
-        <img src="https://i.postimg.cc/hGR2sPvG/DSC0505-311.jpg" alt="Couple Photo" class="w-full h-[50vh] md:h-[70vh] object-cover object-center shadow-md">
+    <section class="w-full overflow-hidden py-4">
+        <div class="w-full max-h-[75vh] flex justify-center items-center">
+            <img src="https://i.postimg.cc/52dS11Mh/DSC0505-213-jing-xiu.jpg" alt="Couple Photo Full Width" class="w-full h-full object-cover">
+        </div>
     </section>
 
-    <!-- RSVP Form Section -->
     <section id="rsvp" class="py-20 px-6 max-w-3xl mx-auto scroll-mt-20">
         <div class="text-center mb-16">
             <span class="font-english text-xs md:text-sm tracking-[0.3em] text-[#A2B4C0] uppercase block mb-2">Join Our Day</span>
@@ -405,12 +374,10 @@
             </p>
         </div>
 
-        <!-- RSVP Form with exact Google Form extract IDs -->
         <div class="shimmer-card rounded-3xl p-8 md:p-12">
             <form id="rsvpForm" action="https://docs.google.com/forms/d/e/1FAIpQLScwvY37c90B3Jtkzopc40m9JZoFHF6_Jozt4H4DGFkqRRZy_g/formResponse" method="POST" class="flex flex-col gap-6">
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Q1: Name (Bilingual Label) -->
                     <div class="space-y-2">
                         <label class="block text-xs font-semibold tracking-wider text-[#5C5A56] font-english uppercase">
                             姓名 <span class="text-stone-400">/ NAME</span> <span class="text-[#E0C8C0]">*</span>
@@ -418,7 +385,6 @@
                         <input type="text" name="entry.1886153940" required placeholder="請輸入您的真實姓名" class="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E0C8C0]/60 rounded-xl focus:ring-1 focus:ring-[#A2B4C0] focus:border-[#A2B4C0] focus:outline-none transition-all duration-300 text-sm placeholder:text-stone-300 font-light">
                     </div>
 
-                    <!-- Q2: Phone (Bilingual Label) -->
                     <div class="space-y-2">
                         <label class="block text-xs font-semibold tracking-wider text-[#5C5A56] font-english uppercase">
                             聯絡電話 <span class="text-stone-400">/ PHONE</span> <span class="text-[#E0C8C0]">*</span>
@@ -426,7 +392,6 @@
                         <input type="tel" name="entry.2029074728" required placeholder="格式：0912345678" class="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E0C8C0]/60 rounded-xl focus:ring-1 focus:ring-[#A2B4C0] focus:border-[#A2B4C0] focus:outline-none transition-all duration-300 text-sm placeholder:text-stone-300 font-light">
                     </div>
 
-                    <!-- Q3: Email (Bilingual Label) - Optional! (Now half-width on desktop) -->
                     <div class="space-y-2">
                         <label class="block text-xs font-semibold tracking-wider text-[#5C5A56] font-english uppercase">
                             電子郵件 <span class="text-stone-400">/ EMAIL</span>
@@ -436,13 +401,12 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Q4: Relationship (Bilingual Label) - Pure Chinese Dropdown Options -->
                     <div class="space-y-2">
                         <label class="block text-xs font-semibold tracking-wider text-[#5C5A56] font-english uppercase">
                             與新人關係 <span class="text-stone-400">/ RELATIONSHIP</span> <span class="text-[#E0C8C0]">*</span>
                         </label>
                         <div class="relative">
-                            <select name="entry.2044940604" required class="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E0C8C0]/60 rounded-xl focus:ring-1 focus:ring-[#A2B4C0] focus:border-[#A2B4C0] focus:outline-none transition-all duration-300 text-sm font-light text-[#5C5A56] appearance-none cursor-pointer">
+                            <select name="entry.2044940604" required class="w-full pl-4 pr-12 py-3 bg-[#FAF9F6] border border-[#E0C8C0]/60 rounded-xl focus:ring-1 focus:ring-[#A2B4C0] focus:border-[#A2B4C0] focus:outline-none transition-all duration-300 text-sm font-light text-[#5C5A56] appearance-none cursor-pointer text-ellipsis overflow-hidden whitespace-nowrap">
                                 <option value="" disabled selected>請選擇關係</option>
                                 <option value="新郎親戚">新郎親戚</option>
                                 <option value="新郎朋友">新郎朋友</option>
@@ -450,24 +414,23 @@
                                 <option value="新娘朋友">新娘朋友</option>
                                 <option value="長輩貴賓">長輩貴賓</option>
                             </select>
-                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#A2B4C0]">
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 pt-[2px] text-[#A2B4C0]">
                                 <i class="fa-solid fa-chevron-down text-xs"></i>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Q5: Attendance (Bilingual Label) - Pure Chinese Dropdown Options -->
                     <div class="space-y-2">
                         <label class="block text-xs font-semibold tracking-wider text-[#5C5A56] font-english uppercase">
                             出席意願 <span class="text-stone-400">/ ATTENDANCE</span> <span class="text-[#E0C8C0]">*</span>
                         </label>
                         <div class="relative">
-                            <select id="attendanceSelect" name="entry.1312972387" required class="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E0C8C0]/60 rounded-xl focus:ring-1 focus:ring-[#A2B4C0] focus:border-[#A2B4C0] focus:outline-none transition-all duration-300 text-sm font-light text-[#5C5A56] appearance-none cursor-pointer">
+                            <select id="attendanceSelect" name="entry.1312972387" required class="w-full pl-4 pr-12 py-3 bg-[#FAF9F6] border border-[#E0C8C0]/60 rounded-xl focus:ring-1 focus:ring-[#A2B4C0] focus:border-[#A2B4C0] focus:outline-none transition-all duration-300 text-sm font-light text-[#5C5A56] appearance-none cursor-pointer text-ellipsis overflow-hidden whitespace-nowrap">
                                 <option value="" disabled selected>請選擇您的意願</option>
                                 <option value="我要參加！一起見證幸福時刻">我要參加！一起見證幸福時刻</option>
                                 <option value="不克出席，送上最真摯的祝福">不克出席，送上最真摯的祝福</option>
                             </select>
-                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#A2B4C0]">
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 pt-[2px] text-[#A2B4C0]">
                                 <i class="fa-solid fa-chevron-down text-xs"></i>
                             </div>
                         </div>
@@ -475,13 +438,12 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <!-- Q6: Adult headcount (Bilingual Label) -->
                     <div class="space-y-2">
                         <label class="block text-xs font-semibold tracking-wider text-[#5C5A56] font-english uppercase">
                             出席的「成人」人數 <span class="text-stone-400">/ ADULT COUNT</span> <span class="text-[#E0C8C0]">*</span>
                         </label>
                         <div class="relative">
-                            <select id="adultCount" name="entry.1567260636" required class="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E0C8C0]/60 rounded-xl focus:ring-1 focus:ring-[#A2B4C0] focus:border-[#A2B4C0] focus:outline-none transition-all duration-300 text-sm font-light text-[#5C5A56] appearance-none cursor-pointer">
+                            <select id="adultCount" name="entry.1567260636" required class="w-full pl-4 pr-12 py-3 bg-[#FAF9F6] border border-[#E0C8C0]/60 rounded-xl focus:ring-1 focus:ring-[#A2B4C0] focus:border-[#A2B4C0] focus:outline-none transition-all duration-300 text-sm font-light text-[#5C5A56] appearance-none cursor-pointer text-ellipsis overflow-hidden whitespace-nowrap">
                                 <option value="" disabled selected>請選擇成人人數</option>
                                 <option value="0">0 人 (祝福滿滿不出席)</option>
                                 <option value="1">1 人</option>
@@ -490,66 +452,62 @@
                                 <option value="4">4 人</option>
                                 <option value="5">5 人以上</option>
                             </select>
-                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#A2B4C0]">
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 pt-[2px] text-[#A2B4C0]">
                                 <i class="fa-solid fa-chevron-down text-xs"></i>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Q7: Child headcount (Bilingual Label) - Default set to "0 人" -->
                     <div class="space-y-2">
                         <label class="block text-xs font-semibold tracking-wider text-[#5C5A56] font-english uppercase">
                             出席的「孩童」人數 <span class="text-stone-400">/ CHILD COUNT</span> <span class="text-[#E0C8C0]">*</span>
                         </label>
                         <div class="relative">
-                            <select id="childCount" name="entry.1259066676" required class="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E0C8C0]/60 rounded-xl focus:ring-1 focus:ring-[#A2B4C0] focus:border-[#A2B4C0] focus:outline-none transition-all duration-300 text-sm font-light text-[#5C5A56] appearance-none cursor-pointer">
+                            <select id="childCount" name="entry.1259066676" required class="w-full pl-4 pr-12 py-3 bg-[#FAF9F6] border border-[#E0C8C0]/60 rounded-xl focus:ring-1 focus:ring-[#A2B4C0] focus:border-[#A2B4C0] focus:outline-none transition-all duration-300 text-sm font-light text-[#5C5A56] appearance-none cursor-pointer text-ellipsis overflow-hidden whitespace-nowrap">
                                 <option value="0" selected>0 人</option>
                                 <option value="1">1 人</option>
                                 <option value="2">2 人</option>
                                 <option value="3">3 人</option>
                             </select>
-                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#A2B4C0]">
+                            <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 pt-[2px] text-[#A2B4C0]">
                                 <i class="fa-solid fa-chevron-down text-xs"></i>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Dynamic Smart Fields Block: Safe & Stable layout structure (Only visible when adult > 0) -->
                 <div id="smartFieldsBlock" class="hidden">
                     <div class="flex flex-col gap-6 border-t border-[#E0C8C0]/30 pt-6 mt-2">
-                        <!-- Q8: Dietary (Portions select 1~4) -->
                         <div class="space-y-2">
                             <label class="block text-xs font-semibold tracking-wider text-[#5C5A56] font-english uppercase">
                                 是否準備素食？需要幾份呢？ <span class="text-stone-400">/ VEGETARIAN MEALS</span>
                             </label>
                             <div class="relative">
-                                <select id="dietSelect" name="entry.1945371672" class="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E0C8C0]/60 rounded-xl focus:ring-1 focus:ring-[#A2B4C0] focus:border-[#A2B4C0] focus:outline-none transition-all duration-300 text-sm font-light text-[#5C5A56] appearance-none cursor-pointer">
+                                <select id="dietSelect" name="entry.1945371672" class="w-full pl-4 pr-12 py-3 bg-[#FAF9F6] border border-[#E0C8C0]/60 rounded-xl focus:ring-1 focus:ring-[#A2B4C0] focus:border-[#A2B4C0] focus:outline-none transition-all duration-300 text-sm font-light text-[#5C5A56] appearance-none cursor-pointer text-ellipsis overflow-hidden whitespace-nowrap">
                                     <option value="不需要素食 (全葷食)" selected>不需要素食 (全葷食)</option>
                                     <option value="1份素食">1 份素食</option>
                                     <option value="2份素食">2 份素食</option>
                                     <option value="3份素食">3 份素食</option>
                                     <option value="4份素食">4 份素食</option>
                                 </select>
-                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#A2B4C0]">
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 pt-[2px] text-[#A2B4C0]">
                                     <i class="fa-solid fa-chevron-down text-xs"></i>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Q9: Baby chairs - Default set to "不需要" -->
                         <div class="space-y-2">
                             <label class="block text-xs font-semibold tracking-wider text-[#5C5A56] font-english uppercase">
                                 是否需要兒童椅 <span class="text-stone-400">/ BABY CHAIRS</span>
                             </label>
                             <div class="relative">
-                                <select id="babyChairSelect" name="entry.1887387302" class="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E0C8C0]/60 rounded-xl focus:ring-1 focus:ring-[#A2B4C0] focus:border-[#A2B4C0] focus:outline-none transition-all duration-300 text-sm font-light text-[#5C5A56] appearance-none cursor-pointer">
+                                <select id="babyChairSelect" name="entry.1887387302" class="w-full pl-4 pr-12 py-3 bg-[#FAF9F6] border border-[#E0C8C0]/60 rounded-xl focus:ring-1 focus:ring-[#A2B4C0] focus:border-[#A2B4C0] focus:outline-none transition-all duration-300 text-sm font-light text-[#5C5A56] appearance-none cursor-pointer text-ellipsis overflow-hidden whitespace-nowrap">
                                     <option value="不需要" selected>不需要</option>
                                     <option value="1張">1 張</option>
                                     <option value="2張">2 張</option>
                                     <option value="3張以上">3 張以上</option>
                                 </select>
-                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[#A2B4C0]">
+                                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 pt-[2px] text-[#A2B4C0]">
                                     <i class="fa-solid fa-chevron-down text-xs"></i>
                                 </div>
                             </div>
@@ -557,7 +515,6 @@
                     </div>
                 </div>
 
-                <!-- Q10: Blessings (Bilingual Label) -->
                 <div class="space-y-2">
                     <label class="block text-xs font-semibold tracking-wider text-[#5C5A56] font-english uppercase">
                         寄予新人的祝福 <span class="text-stone-400">/ BLESSINGS FOR NEWLYWEDS</span>
@@ -565,9 +522,8 @@
                     <textarea name="entry.2093466386" rows="4" placeholder="在這裡寫下給于倞與宇潔的真心祝福吧..." class="w-full px-4 py-3 bg-[#FAF9F6] border border-[#E0C8C0]/60 rounded-xl focus:ring-1 focus:ring-[#A2B4C0] focus:border-[#A2B4C0] focus:outline-none transition-all duration-300 text-sm placeholder:text-stone-300 font-light resize-none"></textarea>
                 </div>
 
-                <!-- Submit Button -->
                 <div class="pt-6 text-center">
-                    <button type="submit" class="w-full md:w-auto px-12 py-4 bg-[#A2B4C0] hover:bg-[#6B7E8C] text-white font-chinese text-sm tracking-[0.3em] rounded-full transition-all duration-300 shadow-md hover:shadow-xl hover:translate-y-[-1px] focus:outline-none">
+                    <button id="submitBtn" type="submit" class="w-full md:w-auto px-12 py-4 bg-[#A2B4C0] hover:bg-[#6B7E8C] text-white font-chinese text-sm tracking-[0.3em] rounded-full transition-all duration-300 shadow-md hover:shadow-xl hover:translate-y-[-1px] focus:outline-none">
                         送出出席回函 SUBMIT
                     </button>
                 </div>
@@ -576,17 +532,15 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="py-12 text-center bg-[#FAF9F6] border-t border-[#E0C8C0]/20">
         <div class="max-w-md mx-auto space-y-3 px-6">
-            <p class="font-english text-xl font-light tracking-[0.2em] text-[#A2B4C0]">YuLiang & YuChieh</p>
+            <p class="font-english text-xl font-light tracking-[0.2em] text-[#A2B4C0]">Huang & Hsu</p>
             <p class="text-[10px] text-[#8C8480] tracking-widest font-light">
-                © 2026 黃于倞 & 徐宇潔 婚禮版權所有
+                © 2026 年 11 月 14 日 黃于倞 & 徐宇潔 婚禮版權所有
             </p>
         </div>
     </footer>
 
-    <!-- Thank you overlay popup -->
     <div id="thankYouModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-900/60 backdrop-blur-sm hidden opacity-0 transition-opacity duration-500">
         <div class="bg-[#FAF9F6] max-w-sm w-full rounded-3xl p-8 text-center shadow-2xl border border-white/60 relative overflow-hidden transform scale-90 transition-transform duration-500" id="modalCard">
             
@@ -613,8 +567,6 @@
     </div>
 
     <script>
-        let isSubmitted = false;
-
         // --- 1. Top Navbar Interaction & Mobile Menu Toggle ---
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -630,7 +582,6 @@
             });
         });
 
-        // Sticky dynamic navbar scroll shadow
         window.addEventListener('scroll', () => {
             const nav = document.querySelector('nav');
             if (window.scrollY > 50) {
@@ -675,7 +626,6 @@
             header.addEventListener('click', () => {
                 const content = header.nextElementSibling;
                 const chevron = header.querySelector('.fa-chevron-down');
-                
                 const isActive = content.classList.contains('active');
                 
                 document.querySelectorAll('.accordion-content').forEach(item => {
@@ -692,7 +642,7 @@
             });
         });
 
-        // --- 4. Form Smart Conditional Logic with Pure Document Flow Display ---
+        // --- 4. Form Smart Conditional Logic ---
         const adultCountSelect = document.getElementById('adultCount');
         const smartFieldsBlock = document.getElementById('smartFieldsBlock');
         const dietSelect = document.getElementById('dietSelect');
@@ -701,23 +651,18 @@
         adultCountSelect.addEventListener('change', (e) => {
             const count = parseInt(e.target.value, 10);
             if (count > 0) {
-                // Instantly remove hidden to show element cleanly within the layout flow
                 smartFieldsBlock.classList.remove('hidden');
                 dietSelect.setAttribute('required', 'required');
                 babyChairSelect.setAttribute('required', 'required');
             } else {
-                // Completely hide to reclaim space cleanly and prevent overlap
                 smartFieldsBlock.classList.add('hidden');
                 dietSelect.removeAttribute('required');
                 babyChairSelect.removeAttribute('required');
-                
-                // Safe default values to ensure clean Google Forms submission payload
                 dietSelect.value = "不需要素食 (全葷食)";
                 babyChairSelect.value = "不需要";
             }
         });
 
-        // Auto-align attendance to reset adult counts safely
         const attendanceSelect = document.getElementById('attendanceSelect');
         attendanceSelect.addEventListener('change', (e) => {
             if (e.target.value === "不克出席，送上最真摯的祝福") {
@@ -729,43 +674,41 @@
             }
         });
 
-        // --- 5. Custom Fetch Submit & Success Modal Handling ---
+        // --- 5. High-reliability Fetch API Submit (Anti-blocking Technique) ---
         const form = document.getElementById('rsvpForm');
+        const submitBtn = document.getElementById('submitBtn');
         const thankYouModal = document.getElementById('thankYouModal');
         const modalCard = document.getElementById('modalCard');
         const closeModalBtn = document.getElementById('closeModalBtn');
 
-        form.addEventListener('submit', (e) => {
-            e.preventDefault(); // IMPORTANT: Stop default redirect
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Intercept default browser behavior
 
-            const submitBtn = form.querySelector('button[type="submit"]');
-            const originalBtnText = submitBtn.innerText;
-            submitBtn.innerText = '傳送中 SENDING...';
-            submitBtn.disabled = true;
-
-            const formData = new FormData(form);
-            
-            // Safe fallback for hidden fields to prevent Google Form rejection
             const adultCountVal = parseInt(adultCountSelect.value, 10);
             if (isNaN(adultCountVal) || adultCountVal === 0) {
-                formData.set('entry.1945371672', '不需要素食 (全葷食)');
-                formData.set('entry.1887387302', '不需要');
+                dietSelect.value = "不需要素食 (全葷食)";
+                babyChairSelect.value = "不需要";
             }
 
-            // Convert to URLSearchParams (Google Forms Requires this exact format)
-            const data = new URLSearchParams();
-            for (const pair of formData) {
-                data.append(pair[0], pair[1]);
+            submitBtn.disabled = true;
+            submitBtn.innerText = "正在傳送中... PLEASE WAIT";
+
+            // Prepare absolute key-value format payload required by Google Server
+            const formData = new FormData(form);
+            const searchParams = new URLSearchParams();
+
+            for (const pair of formData.entries()) {
+                searchParams.append(pair[0], pair[1]);
             }
 
+            // Fire point-to-point Fetch transmission bypassing CORS restrictions
             fetch(form.action, {
                 method: 'POST',
-                mode: 'no-cors', // Bypasses cross-origin blocks
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                body: data
-            }).then(() => {
+                body: searchParams,
+                mode: 'no-cors'
+            })
+            .then(() => {
+                // Instantly pop open the beautiful thank you modal
                 thankYouModal.classList.remove('hidden');
                 setTimeout(() => {
                     thankYouModal.classList.remove('opacity-0');
@@ -774,21 +717,20 @@
 
                 createConfetti();
 
-                // Reset and safe re-defaults
+                // Safe field cleanup
                 form.reset();
                 document.getElementById('childCount').value = "0";
-                document.getElementById('babyChairSelect').value = "不需要";
-                document.getElementById('dietSelect').value = "不需要素食 (全葷食)";
-                
+                dietSelect.value = "不需要素食 (全葷食)";
+                babyChairSelect.value = "不需要";
                 smartFieldsBlock.classList.add('hidden');
-                
-                submitBtn.innerText = originalBtnText;
+            })
+            .catch((error) => {
+                console.error('Error submitting form:', error);
+                alert('回函傳送失敗，請檢查網路連線或直接聯絡新人，謝謝您！');
+            })
+            .finally(() => {
                 submitBtn.disabled = false;
-            }).catch((err) => {
-                console.error(err);
-                alert("傳送失敗，請檢查網路後再試。");
-                submitBtn.innerText = originalBtnText;
-                submitBtn.disabled = false;
+                submitBtn.innerText = "送出出席回函 SUBMIT";
             });
         });
 
